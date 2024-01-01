@@ -1,0 +1,19 @@
+{
+  "name": "shared",
+  "private": true,
+  "engines": {
+    "node": "18.18.x",
+    "npm": "9.8.x"
+  },
+  "type": "module",
+  "scripts": {
+    "lint:js": "npx eslint \"src/**/*.ts\"",
+    "lint": "npm run lint:js",
+    "lint:type": "npx tsc --noEmit",
+    "build": "tsc && tsc-alias"
+  },
+  "dependencies": {
+    "dayjs": "1.11.10",
+    "joi": "17.11.0"
+  }
+}
